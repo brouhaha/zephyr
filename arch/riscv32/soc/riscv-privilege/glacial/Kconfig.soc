@@ -1,0 +1,16 @@
+# Kconfig - Glacial SOC configuration options
+#
+# Copyright (c) 2017 Jean-Paul Etienne <fractalclone@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+choice
+prompt "Glacial implementation"
+depends on SOC_SERIES_GLACIAL
+
+config SOC_RISCV32_GLACIAL
+	bool "Glacial SOC implementation"
+	select ATOMIC_OPERATIONS_C
+
+endchoice

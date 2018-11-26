@@ -1,0 +1,4 @@
+if BOARD_GLACIAL
+config BOARD
+	default "glacial"
+endif
